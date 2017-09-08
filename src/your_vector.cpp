@@ -17,7 +17,7 @@ vector::vector(vector &v){
     this->size=v.size;
     data=new int[size];
     number=0;
-    for(int i=0;i<=v.number;i++)
+    for(int i=0;i<v.number;i++)
         insert(v.data[i]);
 
 }
