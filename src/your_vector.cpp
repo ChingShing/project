@@ -8,15 +8,30 @@ using std::sort;
 //请在这里完成你的代码
 vector::vector(int size){
     //TODO
+    this->size=size;
+    data=new int[size];
+    number=0;
 }
 vector::vector(vector &v){
     //TODO
+    this->size=v.size;
+    data=new int[size];
+    number=0;
+    for(int i=0;i<size;i++)
+        insert(v.data[i]);
+
 }
 vector::vector(){
     //TODO
+    data=new int[5];
+    size=5;
+    number=0;
+    for(int i=0;i<5;i++)
+        insert(0);
 }
 vector::~vector(){
-    //TODO   
+    //TODO
+    delete[] data; 
 }
 
 
