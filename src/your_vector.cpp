@@ -15,8 +15,8 @@ vector::vector(int size){
 vector::vector(vector &v){
     //TODO
     this->size=v.size;
-    cout<<"v.size="<<size<<endl;
-    data=new int[number];
+    //cout<<"v.size="<<size<<endl;
+    data=new int[size];
     number=0;
     for(int i=0;i<=number;i++)
         insert(v.data[i]);
